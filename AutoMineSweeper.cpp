@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "AutoMineSweeper.h"
 
 int APIENTRY _tWinMain(HINSTANCE hInstance,
                      HINSTANCE hPrevInstance,
@@ -11,7 +10,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	if(hwnd == NULL)
 	{
 		MessageBox(NULL, _T("Winmine is not found!"), _T("AutoMineSweeper"), MB_ICONSTOP);
-		return 0;
+		return 1;
 	}
 	DWORD pid;
 	GetWindowThreadProcessId(hwnd, &pid);
@@ -53,6 +52,8 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 				Sleep(20);
 			}
 		}
+
+	CloseHandle(handle);
 	
 	return 0;
 }
