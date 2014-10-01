@@ -1,8 +1,8 @@
 AutoMineSweeper
 ===============
 
-Only for winmine.exe on Windows XP!
-Uses memory to judge mine and click to solve it.
+Only for winmine.exe on Windows XP!<br/>
+Uses memory to judge mines and click.
 
 CAUTION
 ===============
